@@ -97,6 +97,16 @@ console.log(isGreaterThan(4,2));
  * Console.log your result.
 */
 
+function mustBeTrue(boo) {
+  if(boo === true) {
+    return true;
+  }else {
+    return false;
+  }
+}
+console.log("mustBeTrue",mustBeTrue(true));
+console.log("mustBeTrue",mustBeTrue(false));
+
 
 /*
  * #5
