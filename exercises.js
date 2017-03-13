@@ -120,6 +120,15 @@ console.log("mustBeTrue",mustBeTrue(false));
  * Console.log your result.
 */
 
+function bigBird(word) {
+  if(word.length === 3) {
+    return "word to Big Bird!";
+  } else {
+    return "nope.";
+  }
+}
+console.log("bigBird true:",bigBird("tie"));
+console.log("bigBird false:",bigBird("tied"));
 
 /*
  * #6
