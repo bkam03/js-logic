@@ -313,6 +313,17 @@ console.log("graduation f f",graduation(12,false));
  * Console.log your result.
 */ 
 
+function moneyTrain(speed) {
+  if(speed < 50) {
+    return "You are riding Honolulu's Rail.";
+  }else {
+    return "You are riding an Amtrak";
+  }
+}
+console.log("moneyTrain 30",moneyTrain(30));
+console.log("moneyTrain 50",moneyTrain(50));
+console.log("moneyTrain 340",moneyTrain(340));
+
 
 /*
  * #14
