@@ -371,7 +371,7 @@ The for loop is made up for 3 parts:
 var toyotaModels = ["Corolla", "Prius", "4 Runner", "Camry", "Land Cruiser"];
 
 for (var i = 0; i<toyotaModels.length; i++){
-  // console.log("Toyota " + toyotaModels[i]);
+  console.log("Toyota " + toyotaModels[i]);
 }
 
 
@@ -385,6 +385,9 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
+for (var i = 1; i<6;i++) {
+  console.log("player: " + i);
+}
 
 /* 
  * #16
