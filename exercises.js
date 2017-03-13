@@ -29,6 +29,14 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * The function will return true if the number passed into the function is equal to or greater than Hawaii's voting age. Console.log your result.
 */
 
+function canVote(age) {
+  if(age>=21) {
+    return true;
+  }else {
+    return false;
+  }
+}
+console.log("canVote:",canVote(22));
 
 /*
  * #2
@@ -221,7 +229,7 @@ The for loop is made up for 3 parts:
 var toyotaModels = ["Corolla", "Prius", "4 Runner", "Camry", "Land Cruiser"];
 
 for (var i = 0; i<toyotaModels.length; i++){
-   console.log("Toyota " + toyotaModels[i]);
+  // console.log("Toyota " + toyotaModels[i]);
 }
 
 
