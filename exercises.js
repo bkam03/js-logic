@@ -414,6 +414,16 @@ for(var i = 0; i<myFavFoods.length;i++) {
  * Console.log your result.
 */
 
+var numArray = [1,8,2,19,17];
+var total = 0;
+
+function sumItUp(arr) {
+  for( var i = 0; i<arr.length;i++) {
+    total = total + numArray[i];
+  }
+  return total;
+}
+console.log("numArray",sumItUp(numArray));
 
 /*
  * #18
@@ -430,7 +440,19 @@ for(var i = 0; i<myFavFoods.length;i++) {
   var players = ["LeBron", "Linsanity", "Kawhi", "Kobe", "Yao Ming", "Bird", "Jordan"];
   var east = [];
   var west = [];
-
+function allStars(ballers) {
+  console.log(ballers.length);
+  for(var i = 0; i<ballers.length;i++) {
+    if((i%2)===0) {//evens
+      west.push(ballers[i]);
+    }else{
+      east.push(ballers[i]);
+    }
+  }
+}
+console.log("east:",east," \n west",west);
+allStars(players);
+console.log("east:" + east +"\n  west" + west);
 /*
  * #19
  * Function - subways
