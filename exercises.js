@@ -467,7 +467,15 @@ console.log("east:" + east +"\n  west" + west);
 
   var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
-
+function subways(special) {
+  console.log("before subs" + subOftheDay);
+  for(var i = 0;i<special.length;i++)
+    if((i%2)===0) {
+      special[i]="Classic Tuna";
+    }
+  console.log("special sub",special);
+}
+subways(subOftheDay);
 /*
 Final Boss
  * #20
