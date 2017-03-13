@@ -143,6 +143,17 @@ console.log("bigBird false:",bigBird("tied"));
  * Console.log your result.
 */
 
+function isEqual(first,second) {
+  if(first === second) {
+    return "You look mahvelous!";
+  } else {
+    return "I don't know who you are anymore.";
+  }
+}
+console.log("isEqual true:",isEqual(1,1));
+console.log("isEqual false:",isEqual(1,4));
+
+
 
 /*
  * #7
