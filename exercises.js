@@ -178,7 +178,6 @@ function notEqual(first,second) {
 console.log("notEqual true",notEqual("2","eu"));
 console.log("notEqual false",notEqual("2","2"));
 
-
 /*
  * #8
  * Function - spareChange
@@ -190,6 +189,16 @@ console.log("notEqual false",notEqual("2","2"));
  * The function will return true if the number passed into the function is greater than 100, otherwise it will return false.
  * Console.log your result.
 */ 
+
+function spareChange(money) {
+  if(money > 100) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log("spareChange true",spareChange(111));
+console.log("spareChange false",spareChange(11));
 
 
 /*
