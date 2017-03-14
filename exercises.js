@@ -316,8 +316,10 @@ console.log("graduation f f",graduation(12,false));
 function moneyTrain(speed) {
   if(speed < 50) {
     return "You are riding Honolulu's Rail.";
-  }else {
+  }else if(speed < 100) {
     return "You are riding an Amtrak";
+  }else {
+    return "Now you ballin' in the Shinkansen!";
   }
 }
 console.log("moneyTrain 30",moneyTrain(30));
@@ -419,7 +421,7 @@ var total = 0;
 
 function sumItUp(arr) {
   for( var i = 0; i<arr.length;i++) {
-    total = total + numArray[i];
+    total = total + arr[i];
   }
   return total;
 }
@@ -450,7 +452,6 @@ function allStars(ballers) {
     }
   }
 }
-console.log("east:",east," \n west",west);
 allStars(players);
 console.log("east:" + east +"\n  west" + west);
 /*
@@ -491,18 +492,91 @@ Final Boss
   var phrase = "An apple a day keeps Alice feeling awesome!"
   
   var newStr = [];
+  //var finalStr = "";
 
 function removeLetter(str) {
+  var counter2 = 0;
   for(var i=0;i<str.length;i++) {
     if(str[i] != "A" && str[i]!= "a"){
-      newStr[i]=str[i];
+      newStr[counter2]=str[i];
+      counter2++;
     }  
   }
 }
 
 removeLetter(phrase);
-console.log(newStr);
+console.log("1",newStr);
+
+//#2 use this one.
+
+var newStr2 = [];
+
+function removeLetter2(str) {
+  //console.log(str);
+  for(var i=0;i<str.length;i++) {
+    //console.log(str[i]);
+    if(str[i] != "a" && str[i] != "A") {
+      newStr2.push(str[i]);
+      //console.log(newStr2);
+    }
+  }
+}
+removeLetter2(phrase);
+console.log("2",newStr2);
+
+//#3front to back.  this string eats itself.
+
+var newStr3 = phrase.split("");
+console.log("3.1",newStr3);
+
+function removeLetter3(str) {
+  var strLength = str.length;
+  //console.log(strLength);
+  for(var i = 0; i < strLength; i++) {
+    //console.log(i);
+    if(str[0] != "a" && str[0] != "A") {
+      str.push(str.shift());
+    }else {
+      str.shift();
+    }
+  }
+  return str;
+}
+
+newStr3 = removeLetter3(newStr3);
+console.log("3",newStr3);
 
 
+/*function backtoStr(array) {
+  for(var i = 0;i<newStr.length;i++) {
+    console.log(array[i]);
+    //finalStr += array[i];
+  }
+}
+backtoStr(newStr);*/
+
+
+
+/*var arrayX3 = [[[1,2,3],[4,5,6],[7,8,9]],[[10,11,12],[13,14,15],[16,17,18]],[[19,20,21],[22,23,24],[25,26,27]]];
+var sum = 0;
+//add the arrays in the arrays in the arrays
+
+
+console.log("c",arrayX3[a,b,c]);
+
+for(var a = 0; a<arrayX3.length;a++) {
+  var arrayA = arrayX3[a];
+  //console.log("a",arrayA);
+  for(var b = 0; b<arrayX3.length;b++) {
+    var arrayB = arrayA[b];
+    //console.log("b",arrayB);
+    for(var c = 0; c < arrayX3.length;c++) {
+      var cell = arrayB[c];
+      //console.log("c",cell);
+      sum += cell;
+      console.log(cell," ",sum);
+    }
+  }
+}*/
 
 
